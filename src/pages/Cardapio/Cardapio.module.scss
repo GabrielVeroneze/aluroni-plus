@@ -1,0 +1,24 @@
+@use '@/sass/variaveis' as *;
+@use '@/sass/breakpoints' as *;
+
+.menu {
+    padding: 1.25rem $padding-horizontal;
+}
+
+@media (max-width: $mobile) {
+    .menu {
+        padding: 1.25rem $padding-horizontal-mobile;
+    }
+}
+
+@media (min-width: $mobile) and (max-width: $desktop_sm) {
+    .menu {
+        padding: 1.25rem $padding-horizontal-sm;
+    }
+}
+
+@media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+    .menu {
+        padding: 1.25rem $padding-horizontal-md;
+    }
+}
