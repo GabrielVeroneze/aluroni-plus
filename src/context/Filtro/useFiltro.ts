@@ -1,5 +1,5 @@
-import { useContext } from "react"
-import { FiltroContext } from "./Filtro"
+import { useContext } from 'react'
+import { FiltroContext } from './FiltroContext'
 
 export const useFiltro = () => {
     const { filtro, setFiltro } = useContext(FiltroContext)
