@@ -9,7 +9,7 @@ import Buscador from '@/components/Buscador'
 import Filtros from '@/components/Filtros'
 import Ordenador from '@/components/Ordenador'
 import Itens from '@/components/Itens'
-import filtros from '@/json/filtros.json' 
+import filtros from '@/json/filtros.json'
 import styles from './CardapioSecao.module.scss'
 
 const CardapioSecao = () => {
@@ -21,11 +21,11 @@ const CardapioSecao = () => {
     const [pratos, setPratos] = useState<ICardapioItem[]>([])
 
     useEffect(() => {
-        const novaLista = cardapioPratos.filter(prato => 
+        const novaLista = cardapioPratos.filter(prato =>
             verificaBusca(prato.title, busca) &&
             verificaFiltro(prato.category.id, filtro)
         )
-        
+
         setPratos(ordenar(novaLista, ordenador))
     }, [cardapioPratos, busca, filtro, ordenador])
 
