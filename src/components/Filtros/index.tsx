@@ -1,4 +1,4 @@
-import { useFiltro } from '@/context/Filtro'
+import { useFiltro } from '@/context/Filtro/useFiltro'
 import classNames from 'classnames'
 import styles from './Filtros.module.scss'
 

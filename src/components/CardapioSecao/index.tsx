@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react'
-import { useFiltro } from '@/context/Filtro'
+import { useFiltro } from '@/context/Filtro/useFiltro'
 import { BuscaContext } from '@/context/Busca'
 import { OrdenarContext } from '@/context/Ordenar'
 import { useBuscarCardapioPratos } from '@/hooks/useBuscarCardapioPratos'

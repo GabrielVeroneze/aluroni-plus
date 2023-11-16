@@ -1,5 +1,5 @@
 import { BuscaProvider } from '@/context/Busca'
-import { FiltroProvider } from '@/context/Filtro'
+import { FiltroProvider } from '@/context/Filtro/Filtro'
 import { OrdenarProvider } from '@/context/Ordenar'
 import Cabecalho from '@/components/Cabecalho'
 import CardapioSecao from '@/components/CardapioSecao'
