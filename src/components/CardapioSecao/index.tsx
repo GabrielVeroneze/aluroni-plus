@@ -42,7 +42,7 @@ const CardapioSecao = () => {
                 <Ordenador />
             </div>
             <div className={styles.cardapio__itens}>
-                {pratos.map(item => (
+                {cardapioPratos.map(item => (
                     <Itens key={item.id} item={item} />
                 ))}
             </div>
