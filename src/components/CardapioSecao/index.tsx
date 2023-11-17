@@ -1,10 +1,4 @@
-import { useContext, useEffect, useState } from 'react'
-import { useFiltro } from '@/context/Filtro/useFiltro'
-import { BuscaContext } from '@/context/Busca/BuscaContext'
-import { OrdenarContext } from '@/context/Ordenar/OrdenarContext'
-import { useBuscarCardapioPratos } from '@/hooks/useBuscarCardapioPratos'
-import { ordenar, verificaBusca, verificaFiltro } from '@/utils/controles'
-import { ICardapioItem } from '@/interfaces/ICardapioItem'
+import { useControles } from '@/hooks/useControles'
 import Buscador from '@/components/Buscador'
 import Filtros from '@/components/Filtros'
 import Ordenador from '@/components/Ordenador'
@@ -13,21 +7,7 @@ import filtros from '@/json/filtros.json'
 import styles from './CardapioSecao.module.scss'
 
 const CardapioSecao = () => {
-    const { cardapioPratos } = useBuscarCardapioPratos()
-    const { filtro } = useFiltro()
-    const { busca } = useContext(BuscaContext)
-    const { ordenador } = useContext(OrdenarContext)
-
-    const [pratos, setPratos] = useState<ICardapioItem[]>([])
-
-    useEffect(() => {
-        const novaLista = cardapioPratos.filter(prato =>
-            verificaBusca(prato.title, busca) &&
-            verificaFiltro(prato.category.id, filtro)
-        )
-
-        setPratos(ordenar(novaLista, ordenador))
-    }, [cardapioPratos, busca, filtro, ordenador])
+    const { pratosManipulados } = useControles()
 
     return (
         <section className={styles.cardapio}>
@@ -42,7 +22,7 @@ const CardapioSecao = () => {
                 <Ordenador />
             </div>
             <div className={styles.cardapio__itens}>
-                {cardapioPratos.map(item => (
+                {pratosManipulados.map(item => (
                     <Itens key={item.id} item={item} />
                 ))}
             </div>
