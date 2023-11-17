@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { OrdenarContext } from '@/context/Ordenar'
+import { OrdenarContext } from '@/context/Ordenar/OrdenarContext'
 import styles from './Opcao.module.scss'
 
 interface OpcaoProps {

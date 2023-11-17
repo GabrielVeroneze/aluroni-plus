@@ -1,6 +1,6 @@
 import { BuscaProvider } from '@/context/Busca/BuscaContext'
 import { FiltroProvider } from '@/context/Filtro/FiltroContext'
-import { OrdenarProvider } from '@/context/Ordenar'
+import { OrdenarProvider } from '@/context/Ordenar/OrdenarContext'
 import Cabecalho from '@/components/Cabecalho'
 import CardapioSecao from '@/components/CardapioSecao'
 import logo from '@/assets/logo.svg'

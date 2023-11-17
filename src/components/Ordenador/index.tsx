@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react'
-import { OrdenarContext } from '@/context/Ordenar'
+import { OrdenarContext } from '@/context/Ordenar/OrdenarContext'
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md'
 import classNames from 'classnames'
 import Opcao from './Opcao'
