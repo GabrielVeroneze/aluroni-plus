@@ -1,4 +1,4 @@
-import { BuscaProvider } from '@/context/Busca'
+import { BuscaProvider } from '@/context/Busca/BuscaContext'
 import { FiltroProvider } from '@/context/Filtro/FiltroContext'
 import { OrdenarProvider } from '@/context/Ordenar'
 import Cabecalho from '@/components/Cabecalho'

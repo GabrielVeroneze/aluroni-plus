@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { BuscaContext } from '@/context/Busca'
+import { BuscaContext } from '@/context/Busca/BuscaContext'
 import { CgSearch } from 'react-icons/cg'
 import styles from './Buscador.module.scss'
 
