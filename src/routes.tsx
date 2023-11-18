@@ -19,11 +19,11 @@ const AppRoutes = () => {
                             <Inicio />
                         </PratosProvider>
                     }
-                />
-                <Route
-                    path="/cardapio"
-                    element={
-                        <PratosProvider>
+                >
+                    <Route index element={<Inicio />} />
+                    <Route
+                        path="cardapio"
+                        element={
                             <BuscaProvider>
                                 <FiltroProvider>
                                     <OrdenarProvider>
@@ -31,9 +31,9 @@ const AppRoutes = () => {
                                     </OrdenarProvider>
                                 </FiltroProvider>
                             </BuscaProvider>
-                        </PratosProvider>
-                    }
-                />
+                        }
+                    />
+                </Route>
             </Routes>
         </Router>
     )
