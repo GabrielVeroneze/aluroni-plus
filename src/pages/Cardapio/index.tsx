@@ -5,13 +5,14 @@ import Ordenador from '@/components/Ordenador'
 import Itens from '@/components/Itens'
 import filtros from '@/json/filtros.json'
 import styles from './Cardapio.module.scss'
+import stylesCommon from '@/sass/common/EstilosComuns.module.scss'
 
 const Cardapio = () => {
     const { pratosManipulados } = useControles()
 
     return (
         <section className={styles.cardapio}>
-            <h3 className={styles.cardapio__titulo}>Cardápio</h3>
+            <h3 className={stylesCommon.titulo}>Cardápio</h3>
             <Buscador />
             <div className={styles.cardapio__controles}>
                 <div className={styles.cardapio__filtros}>

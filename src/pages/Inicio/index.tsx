@@ -1,6 +1,7 @@
 import { usePratos } from '@/context/Pratos/usePratos'
 import Recomendado from '@/components/Recomendado'
 import styles from './Inicio.module.scss'
+import stylesCommon from '@/sass/common/EstilosComuns.module.scss'
 
 const Inicio = () => {
     const { pratos } = usePratos()
@@ -12,7 +13,7 @@ const Inicio = () => {
 
     return (
         <section>
-            <h3 className={styles.titulo}>Recomendações da cozinha</h3>
+            <h3 className={stylesCommon.titulo}>Recomendações da cozinha</h3>
             <div className={styles.recomendados}>
                 {pratosRecomendados.map(prato => (
                     <Recomendado key={prato.id} prato={prato} />
