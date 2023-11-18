@@ -2,14 +2,6 @@
 @use '@/sass/breakpoints' as *;
 
 .cardapio {
-    padding: 3.125rem $padding-horizontal;
-
-    &__titulo {
-        color: $escuro;
-        font-size: 3rem;
-        margin: 0 0 1.875rem;
-    }
-
     &__controles {
         align-items: center;
         display: flex;
@@ -37,12 +29,6 @@
 
 @media (max-width: $mobile) {
     .cardapio {
-        padding: 3.125rem $padding-horizontal-mobile;
-
-        &__titulo {
-            font-size: 2.75rem;
-        }
-
         &__controles, &__filtros {
             justify-content: center;
         }
@@ -50,17 +36,5 @@
         &__itens {
             align-items: center;
         }
-    }
-}
-
-@media (min-width: $mobile) and (max-width: $desktop_sm) {
-    .cardapio {
-        padding: 3.125rem $padding-horizontal-sm;
-    }
-}
-
-@media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-    .cardapio {
-        padding: 3.125rem $padding-horizontal-md;
     }
 }
