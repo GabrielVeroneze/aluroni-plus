@@ -5,6 +5,7 @@ import { FiltroProvider } from '@/context/Filtro/FiltroContext'
 import { OrdenarProvider } from '@/context/Ordenar/OrdenarContext'
 import Inicio from '@/pages/Inicio'
 import Cardapio from '@/pages/Cardapio'
+import Layout from '@/components/Layout'
 import Menu from '@/components/Menu'
 
 const AppRoutes = () => {
@@ -16,7 +17,7 @@ const AppRoutes = () => {
                     path="/"
                     element={
                         <PratosProvider>
-                            <Inicio />
+                            <Layout />
                         </PratosProvider>
                     }
                 >
