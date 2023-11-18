@@ -1,6 +1,14 @@
+import { usePratos } from '@/context/Pratos/usePratos'
 import styles from './Inicio.module.scss'
 
 const Inicio = () => {
+    const { pratos } = usePratos()
+    let pratosRecomendados = [...pratos]
+
+    pratosRecomendados = pratosRecomendados
+        .sort(() => 0.5 - Math.random())
+        .splice(0, 3)
+
     return (
         <section>
                 
