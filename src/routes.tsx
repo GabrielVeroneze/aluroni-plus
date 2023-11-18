@@ -5,10 +5,12 @@ import { FiltroProvider } from '@/context/Filtro/FiltroContext'
 import { OrdenarProvider } from '@/context/Ordenar/OrdenarContext'
 import Inicio from '@/pages/Inicio'
 import Cardapio from '@/pages/Cardapio'
+import Menu from '@/components/Menu'
 
 const AppRoutes = () => {
     return (
         <Router>
+            <Menu />
             <Routes>
                 <Route
                     path="/"
