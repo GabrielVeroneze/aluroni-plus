@@ -8,6 +8,7 @@ import Cardapio from '@/pages/Cardapio'
 import Sobre from '@/pages/Sobre'
 import Layout from '@/components/Layout'
 import Menu from '@/components/Menu'
+import Rodape from '@/components/Rodape'
 
 const AppRoutes = () => {
     return (
@@ -38,6 +39,7 @@ const AppRoutes = () => {
                     <Route path="sobre" element={<Sobre />} />
                 </Route>
             </Routes>
+            <Rodape />
         </Router>
     )
 }
