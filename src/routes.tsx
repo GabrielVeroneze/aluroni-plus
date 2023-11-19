@@ -5,6 +5,7 @@ import { FiltroProvider } from '@/context/Filtro/FiltroContext'
 import { OrdenarProvider } from '@/context/Ordenar/OrdenarContext'
 import Inicio from '@/pages/Inicio'
 import Cardapio from '@/pages/Cardapio'
+import Sobre from '@/pages/Sobre'
 import Layout from '@/components/Layout'
 import Menu from '@/components/Menu'
 
@@ -34,6 +35,7 @@ const AppRoutes = () => {
                             </BuscaProvider>
                         }
                     />
+                    <Route path="sobre" element={<Sobre />} />
                 </Route>
             </Routes>
         </Router>
