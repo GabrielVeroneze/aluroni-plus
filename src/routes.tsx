@@ -6,6 +6,7 @@ import { OrdenarProvider } from '@/context/Ordenar/OrdenarContext'
 import Inicio from '@/pages/Inicio'
 import Cardapio from '@/pages/Cardapio'
 import Sobre from '@/pages/Sobre'
+import NotFound from '@/pages/NotFound'
 import Layout from '@/components/Layout'
 import Menu from '@/components/Menu'
 import Rodape from '@/components/Rodape'
@@ -37,6 +38,7 @@ const AppRoutes = () => {
                         }
                     />
                     <Route path="sobre" element={<Sobre />} />
+                    <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
             <Rodape />
