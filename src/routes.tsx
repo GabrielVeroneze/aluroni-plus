@@ -7,6 +7,7 @@ import Inicio from '@/pages/Inicio'
 import Cardapio from '@/pages/Cardapio'
 import Sobre from '@/pages/Sobre'
 import NotFound from '@/pages/NotFound'
+import Prato from '@/pages/Prato'
 import Layout from '@/components/Layout'
 import Menu from '@/components/Menu'
 import Rodape from '@/components/Rodape'
@@ -40,6 +41,7 @@ const AppRoutes = () => {
                     <Route path="sobre" element={<Sobre />} />
                 </Route>
                 <Route path="*" element={<NotFound />} />
+                <Route path="prato/:id" element={<Prato />} />
             </Routes>
             <Rodape />
         </Router>
