@@ -1,5 +1,5 @@
 import { ICardapioItem } from "@/interfaces/ICardapioItem"
-import Tags from "./Tags"
+import Tags from "@/components/Tags"
 import styles from './Itens.module.scss'
 
 interface ItensProps {
