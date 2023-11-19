@@ -8,12 +8,12 @@
     justify-content: space-between;
 }
 
-.nossaCasa {
+.local {
     margin-bottom: 6.25rem;
     position: relative;
     width: 100%;
 
-    img {
+    &__imagem {
         border-radius: 5px;
         width: 100%;
     }

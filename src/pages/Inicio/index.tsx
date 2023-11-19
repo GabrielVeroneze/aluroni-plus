@@ -1,5 +1,6 @@
 import { usePratos } from '@/context/Pratos/usePratos'
 import Recomendado from '@/components/Recomendado'
+import retauranteImagem from '@/assets/nossa_casa.png'
 import styles from './Inicio.module.scss'
 import stylesCommon from '@/sass/common/EstilosComuns.module.scss'
 
@@ -18,6 +19,18 @@ const Inicio = () => {
                 {pratosRecomendados.map(prato => (
                     <Recomendado key={prato.id} prato={prato} />
                 ))}
+            </div>
+            <h3 className={stylesCommon.titulo}>Nossa casa</h3>
+            <div className={styles.local}>
+                <img
+                    className={styles.local__imagem}
+                    src={retauranteImagem}
+                    alt="Casa do Aluroni"
+                />
+                <address className={styles.local__endereco}>
+                    Rua Vergueiro, 3185<br /><br />
+                    Vila Mariana - SP
+                </address>
             </div>
         </section>
     )
