@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import { ICardapioItem } from '@/interfaces/ICardapioItem'
 import styles from './Recomendado.module.scss'
 
@@ -6,6 +7,12 @@ interface RecomendadoProps {
 }
 
 const Recomendado = ({ prato }: RecomendadoProps) => {
+    const navigate = useNavigate()
+
+    const redirecionarParaDetalhes = (prato: ICardapioItem) => {
+        navigate(`/prato/${prato.id}`, { state: { ...prato } })
+    }
+
     return (
         <div className={styles.recomendado}>
             <img
@@ -13,7 +20,10 @@ const Recomendado = ({ prato }: RecomendadoProps) => {
                 src={prato.photo}
                 alt={prato.title}
             />
-            <button className={styles.recomendado__botao}>
+            <button
+                className={styles.recomendado__botao}
+                onClick={() => redirecionarParaDetalhes(prato)}
+            >
                 Ver Mais
             </button>
         </div>
