@@ -38,8 +38,8 @@ const AppRoutes = () => {
                         }
                     />
                     <Route path="sobre" element={<Sobre />} />
-                    <Route path="*" element={<NotFound />} />
                 </Route>
+                <Route path="*" element={<NotFound />} />
             </Routes>
             <Rodape />
         </Router>
