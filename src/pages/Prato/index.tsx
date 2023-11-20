@@ -1,8 +1,11 @@
+import { useEncontraPratoDaRota } from '@/hooks/useEncontraPratoDaRota'
 import Voltar from '@/components/Voltar'
 import Tags from '@/components/Tags'
 import styles from './Prato.module.scss'
 
 const Prato = () => {
+    const { prato } = useEncontraPratoDaRota()
+
     return (
         <main className={styles.principal}>
             <Voltar />
