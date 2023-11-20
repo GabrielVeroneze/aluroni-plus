@@ -1,18 +1,12 @@
 @use '@/sass/variaveis' as *;
 @use '@/sass/breakpoints' as *;
 
-.principal {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2.75rem;
-}
-
 .prato {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 2.75rem;
+    margin-top: 2.75rem;
 
     &__titulo {
         font-size: 3rem;
