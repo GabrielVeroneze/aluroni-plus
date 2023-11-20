@@ -12,7 +12,7 @@ const Prato = () => {
     }
     
     return (
-        <main className={styles.principal}>
+        <>
             <Voltar />
             <section className={styles.prato}>
                 <h1 className={styles.prato__titulo}>
@@ -30,7 +30,7 @@ const Prato = () => {
                     <Tags item={prato}/>
                 </div>
             </section>
-        </main>
+        </>
     )
 }
 
