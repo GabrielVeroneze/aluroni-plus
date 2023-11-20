@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom"
 import { ICardapioItem } from "@/interfaces/ICardapioItem"
 import Tags from "@/components/Tags"
 import styles from './Itens.module.scss'
@@ -7,10 +8,11 @@ interface ItensProps {
 }
 
 const Itens = ({ item }: ItensProps) => {
-    const { title, description, photo } = item
+    const { id, title, description, photo } = item
+    const navigate = useNavigate()
 
     return (
-        <div className={styles.item}>
+        <div
             <img
                 className={styles.item__imagem}
                 src={photo}
