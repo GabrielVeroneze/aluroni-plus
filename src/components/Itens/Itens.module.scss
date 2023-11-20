@@ -2,10 +2,19 @@
 @use '@/sass/breakpoints' as *;
 
 .item {
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     gap: 1.25rem;
+    padding: 1.25rem;
+    transition: .2s ease-in;
     width: 90%;
+
+    &:hover {
+        background-color: $cinza;
+    }
 
     &__imagem {
         border-radius: 8px;
