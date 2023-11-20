@@ -13,6 +13,9 @@ const Itens = ({ item }: ItensProps) => {
 
     return (
         <div
+            className={styles.item}
+            onClick={() => navigate(`/prato/${id}`)}
+        >
             <img
                 className={styles.item__imagem}
                 src={photo}
