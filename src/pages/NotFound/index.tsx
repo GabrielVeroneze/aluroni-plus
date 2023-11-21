@@ -15,7 +15,11 @@ const NotFound = () => {
             <div className={styles.voltar}>
                 <Voltar />
             </div>
-            <img src={notFoundImagem} alt="Erro 404" />
+            <img
+                className={styles.imagem}
+                src={notFoundImagem}
+                alt="Erro 404"
+            />
         </section>
     )
 }
