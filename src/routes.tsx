@@ -39,8 +39,15 @@ const AppRoutes = () => {
                         }
                     />
                     <Route path="sobre" element={<Sobre />} />
-                    <Route path="prato/:id" element={<Prato />} />
                 </Route>
+                <Route
+                    path="prato/:id"
+                    element={
+                        <PratosProvider>
+                            <Prato />
+                        </PratosProvider>
+                    }
+                />
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <Rodape />
