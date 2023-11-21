@@ -1,4 +1,5 @@
 @use '@/sass/variaveis' as *;
+@use '@/sass/breakpoints' as *;
 
 .recomendados {
     border-radius: 2px;
@@ -35,5 +36,11 @@
         position: absolute;
         right: 0;
         width: 200px;
+    }
+}
+
+@media (max-width: $desktop_xsm) {
+    .recomendados {
+        justify-content: space-evenly;
     }
 }
